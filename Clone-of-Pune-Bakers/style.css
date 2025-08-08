@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgb(232, 230, 230);
+    color: black;
+    padding: 3px;
+    
+}
+
+.leftTopNav{
+    
+    margin-left: 30px;
+    font-size: 14px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+a{
+    color: black;
+}
+
+.rightTopNav{
+    margin-right: 30px;
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.mainNav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.mainNav .left{
+    width: 50px;
+  
+    font-size: 20px;
+}
+
+.mainNav .mid{
+    width: 900px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mid img{
+    
+    width: 100px;
+}
+
+.mainNav .right{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.notice{
+      position: relative;
+      height: 50px;
+      background-color: #141414;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+}
+
+ 
+
+.a1{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      animation: slide 8s infinite;
+      font-size: 15px;
+      font-family:monospace;
+}
+
+.a1:nth-child(1) {
+      animation-delay: 0s;
+ }
+
+.a1:nth-child(2) {
+      animation-delay: 4s;
+    }
+
+@keyframes slide {
+  0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+  10% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+  40% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+  50% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+  100% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+    }
+
+
+
+.banner{
+ 
+    width: 100%;
+    height: 700px;
+    background-image: url(./Banner.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    color: white;
+    
+
+}
+
+.bannerContent{
+
+  width: 50%;
+  height: 500px;
+  margin: 0px auto;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.banner H1{
+  font-size: 60px;
+}
+
+.btn{
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-around;
+  padding: 30px 100px;
+}
+ 
+.btn button{
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.btn button:hover{
+  cursor: pointer;
+  
+}
+
+/* ................................. */
+
+.onlineCake{
+  width: 100%;
+  height: 350px;
+  padding: 100px 200px;
+  text-align: center;
+  
+}
+
+.onlineCake p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+/* .......................................... */
+
+
+.ShopByCategory{
+  text-align: center;
+}
+
+.category{
+  margin-top: 50px;
+  height: 400px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 10px;
+  
+}
+
+
+.category .cat {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+
+.category .cat img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 1s ease;
+}
+
+.category .cat img:hover{
+  transform: scale(1.1,1.1);
+  
+}
+
+
+.category button{
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgb(253, 252, 251);
+  color: rgb(32, 31, 31);
+  font-size: 15px;
+  border: none;
+}
+
+
+/* ................................. */
+
+.featuredCollection{
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  
+  
+}
+
+.featuredCollection button{
+  margin-top:30px;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(245, 249, 249);
+  border: 1px solid rgb(218, 215, 215);
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 30px;
+  padding: 20px 10px;
+  
+}
+
+.collection h4{
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  margin-bottom: 2px;
+}
+
+.collection h5{
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+.collection .clt{
+  width:300px;
+  height: 300px;
+}
+
+.collection .clt img{
+  width:100%;
+  height: 100%;
+}
+/* .......................................... */
+
+.retailStore{
+  width: 100%;
+  height: 500px;
+  
+  background-image: url(./brightly-iced-cake_1800x.webp);
+   background-size: cover;
+   background-position: center;
+
+}
+
+.retailStore img{
+  width: 100%;
+  height: 100%;
+   
+}
+
+.storeDetails{
+  background-color: aliceblue;
+  width: 28%;
+  height: 65%;
+  margin-left: 40px;
+  margin-top: 50px; 
+  padding: 30px;
+  border: none;
+}
+
+.storeDetails button{
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border: none;
+  width: 180px;
+  height: 35px;
+}
+
+/* ....................................................... */
+
+.gourmet{
+
+  height: 900px;
+  
+  padding: 20px 30px;
+
+  
+ 
+}
+
+.gourmet h1{
+
+  margin-top: 50px;
+   font-weight: lighter;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gourmet p{
+  margin-top: 30px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ................................. */
+
+.lastDiv{
+  width: 100%;
+  height: 500px;
+  border: 1px solid rgb(218, 215, 215);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  
+}
+
+.cake{
+  width: 33%;
+  height: 100%;
+  
+  padding: 20px;
+  text-align: center;
+
+ 
+}
+
+.cake h1{
+    font-family: apple-system;
+}
+
+.cake p{
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cake button{
+  margin-top: 20px;
+    font-family: apple-system;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(245, 249, 249);
+  border: 1px solid rgb(218, 215, 215);
+}
+
+.lastDiv img{
+  width: 100%;
+  height: 60%;
+  
+}
+
+
+/* ................................... */
+
+footer{
+  width: 100%;
+  height: 500px;
+
+  padding: 70px 40px;
+  display: flex;
+ 
+
+}
+
+.footerLeft{
+  width: 35%;
+}
+
+.footerLeft ul li{
+ list-style-type: none;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin-top: 10px;
+ font-size: 14px;
+}
+
+.footerMid{
+  margin-top: 10px;
+  width: 40%;
+}
+
+.footerMid p{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin-top: 20px;
+ font-size: 14px;
+
+}
+
+.footerMid input{
+
+width: 95%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin-top: 30px;
+ font-size: 14px;
+ border:none;
+ border-bottom: 2px solid rgb(18, 18, 18);
+  
+}
+
+.sm{
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+/* ...................... */
+
+.footerRight{
+  width: 30%;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.footerRight p{
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footerRight h5{
+  margin-top: 5px;
+  font-weight: lighter;
+}
