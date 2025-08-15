@@ -468,3 +468,168 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   margin-top: 5px;
   font-weight: lighter;
 }
+
+@media only screen and (min-width:200px) and (max-width: 575px){
+
+.mid a{
+  display: none;
+}
+.mid a:nth-of-type(4) {
+  display: inline;
+}
+
+.mid{
+  width: 100px;
+  justify-content: center;
+  
+}
+
+.mainNav .right{
+
+  width: 60px;
+  justify-content: space-between;
+
+}
+
+.banner{
+ display: none;
+}
+
+.onlineCake{
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.onlineCake h1{
+  font-size: 20px;
+}
+
+.onlineCake p{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.ShopByCategory h1{
+  font-size: 20px;
+}
+
+.category{
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  
+}
+
+
+.category .cat {
+  flex-basis: 45%;
+  height: 180px;
+  margin: 2%;
+  
+}
+
+.category button{
+  width: 90%;
+  height: 20px;
+  font-size: 12px;
+  top:80%
+}
+
+.featuredCollection h1{
+  font-size: 20px;
+}
+
+
+.collection{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.collection .clt{
+    flex-basis: 45%;
+  height: 180px;
+  margin: 2%;
+}
+.collection h4{
+  font-size: 10px;
+}
+
+.collection h5{
+  display: none;
+}
+.retailStore{
+  margin-top: 100px;
+}
+
+.storeDetails{
+  margin:0px auto;
+  width: 90%;
+  justify-content: center;
+}
+
+.gourmet{
+  padding: 10px;
+  height: 1200px;
+}
+
+.gourmet h1{
+  font-size: 20px;
+  
+}
+
+.gourmet p{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.lastDiv{
+  flex-direction: column;
+  height: 1300px;
+  padding:50px 20px;
+
+  justify-content: none;
+  
+}
+
+.cake{
+  width: 100%;
+  padding: 0px;
+}
+
+footer{
+  flex-direction: column;
+  align-items: center;  
+  padding: 40px 70px;
+  text-align: center;
+}
+
+.footerLeft{
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.footerMid{
+  width: 100%;
+  padding: 20px 10px;
+}
+
+
+.footerMid p{
+  display: none;
+}
+
+.footerMid form{
+  display: none;
+}
+
+.sm{
+  display: none;
+}
+
+.footerRight{
+  display: none ;
+}
+}
