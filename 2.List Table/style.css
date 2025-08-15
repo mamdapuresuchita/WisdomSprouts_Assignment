@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.task1{
+    background-color: rgb(28, 94, 94);
+    height: 50px;
+    width: 650px;
+    text-align: center;
+}
+
+.def{
+    background-color: rgb(28, 94, 94);
+    display: flex;
+    width:650px;
+    height: 300px;
+    justify-content: space-evenly;
+    
+}
+
+.def ol{
+    background-color: rgb(63, 247, 56);
+    padding: 10px;
+    margin: 5px;
+    text-align:center ;
+ 
+}
+
+.def ul{
+    background-color: rgb(63, 247, 56);
+    padding: 10px;
+    margin: 5px;
+    text-align:center ;
+ 
+}
+
+
+
+
+.fruits{
+    background-color: white;
+    height: 80%;
+    width: 25%; 
+    padding: 10px 2px;
+    
+}
+
+.fruits ol li{
+    background-color: rgb(240, 148, 68);
+    color: rgb(12, 12, 12);
+    padding:1px;
+    margin-top: 35px;
+
+    
+    
+}
+
+.veg{
+    background-color: rgb(246, 247, 246);
+    height: 80%;
+    width: 25%;
+    padding: 10px 2px;
+    
+
+}
+
+.veg ul li{
+    background-color: rgb(240, 148, 68);
+    color: rgb(12, 12, 12);
+    padding:1px;
+    margin-top: 35px;
+    list-style-type:square;
+    
+    
+}
+
+.grocery{
+    background-color: rgb(248, 251, 250);
+    height: 80%;
+    width: 25%;
+    padding: 10px 2px;
+}
+
+.grocery ul li{
+    background-color: rgb(240, 148, 68);
+    color: rgb(12, 12, 12);
+    padding:1px;
+    margin-top: 35px;
+    
+    
+}
+
+
+/* .......................................... */
+.jobDetails{
+  border:2px solid yellow;
+  text-align: center;
+  gap: 0px;
+  border-collapse: collapse;
+}
+
+
+
+.jobDetails th{
+    border:2px solid yellow;
+    background-color: yellow;
+
+}
+
+
+.jobDetails tr{
+    border:2px solid yellow;
+}  
+
+.abc th{ 
+    background-color: orangered;
+    color: white;
+   
+   
+}
+
+.jobDetails td{
+    border:2px solid yellow;
+   
+    background-color: rgb(147, 242, 30);
+}
+
+
+
+
+.mob{
+    border:2px solid black;
+}
+
+.mob th{
+    border:2px solid black;
+    background-color: aqua;
+}
+
+.mob tr{
+    border:2px solid black;
+}
+
+.mob td{
+    border:2px solid black;
+}
+
+.model th{
+    background-color: rgb(252, 199, 130);
+}
+
+/* ................................ */
+.mobdetails{
+    width: 700px;
+    height: 400px;
+    background-color: aqua;
+    font-size: 10px;
+}
+/* .mobdetails p{
+    font-size: 30px;
+} */
+
+.specs{
+    width:100%;
+    height: 100%;
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family:serif;
+}
+
+.specs td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+.specs .popular{
+    border:2px solid orange;
+}
+
+
+.specs th{
+    background-color: white;
+    border: 1px solid black;
+    height: 80px;
+}
+
+.specs tr:nth-child(odd){
+    background-color: rgb(224, 224, 224);
+    
+}
+.specs tr:nth-child(even){
+    background-color:white;
+    
+}
+
+
+.price{
+    font-size: 35px;
+}
+
+.per{
+    font-size: 10px;
+}
+
+sup{
+    font-size: 15px;
+}
+
+.specs button{
+    font-size: 7px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
+
+/* ................................ */
+.favLink{
+    margin-top: 30px;
+}
+
+.xyz{
+    border-collapse: collapse;
+}
+.xyz th{
+    border: 1px solid black;
+}
+
+.xyz tr{
+    border: 1px solid black;
+}
+
+.xyz td{
+    border: 1px solid black;
+}
+
+.mergedcell{
+    width: 20%;
+    height: 200px;
+    background-color: rgb(183, 178, 178);
+}
+
+/* .......................... */
+
+.menu{
+    /* background-color: aqua; */
+    border: 2px dotted blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    width: 60%;
+    font-size: 20px;
+    padding-left: 50px;
+    background-image: url('./food.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.menu li{
+    margin-bottom: 10px;
+    font-style: bold;
+    background-color: rgba(254, 254, 254, 0.5);
+    width: max-content;
+
+}
+
+.menu ul{
+    
+}
+
+.breakfast{
+    display: flex;
+    width: 80%;
+ 
+}
+
+.beverages {
+    display: flex;
+    width: 80%;
+
+   
+
+}
+
+.main{
+     display: flex;
+   
+
+}
+
+.rice{
+    display: flex;
+   
+}
+
+.roti{
+    display: flex;
+    
+}
+
+/* ............................ */
+
+.bookingtable{
+    border: 1px solid white;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+.bookingtable th{
+    border: 1px solid black;
+    background-color: chartreuse;
+    
+}
+
+.bookingtable tr{
+    border: 1px solid black;
+ 
+}
+
+.bookingtable td{
+    border: 1px solid black;
+    
+}
