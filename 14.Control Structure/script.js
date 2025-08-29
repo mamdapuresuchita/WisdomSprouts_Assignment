@@ -255,4 +255,24 @@ for(i=0;i<terms;i++){
 
 console.log("Sequence:"+ seq);
 
- 
+//19.Armstrong number
+
+let num19=Number(prompt("Enter a number: "))
+
+let str19=num19.toString();
+let numStr=str19.length;
+let sum_num=0;
+
+for (let i=0;i<numStr;i++){
+    sum_num = sum_num + Math.pow(Number(str19[i]),numStr);
+}
+
+if(sum_num == num19){
+console.log(num19," is an armstrong number");
+}
+else{
+    console.log(num19 ,"is not an Armstrong number")
+}
+
+
+//20.
