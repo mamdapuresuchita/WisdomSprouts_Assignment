@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <h1 class="p-3 mb-2 bg-dark-subtle text-dark-emphasis text-center">Operations on String</h1>
+
+    <div class="form-floating m-5 border border-primary" >
+        <textarea class="form-control" placeholder="Leave a comment here" id="textarea" style="height: 100px"></textarea>
+        <label for="textarea">Enter your text</label>
+    </div>
+
+    <div class=" w-50 mx-auto bg-info text-dark mt-3 p-3">
+        <div id="result">Result</div>
+    </div>
+
+
+   
+    <!-- Button -->
+
+
+    <!-- 
+
+     <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Check first word of sentence</button>
+    </div>
+    
+     <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Split string into array</button>
+    </div>
+     <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Convert first letter of each word in a string to uppercase</button>
+    </div>
+    <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Reverse characters in string</button>
+    </div>
+    <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Count the number of occurrence of a specific character</button>
+    </div>
+    <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Remove all non-alphanumeric characters from a string</button>
+    </div>
+    <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2">Check if a starts and ends with the same character</button>
+    </div> -->
+    <div class="mt-5 d-flex " onclick="capitalize()">
+        <button type="button" class="btn btn-warning px-3 py-2" id="capitalizeButton">Capitalize </button>
+    </div>
+
+    <div class="mt-5 d-flex " onclick="convertToLowerCase()">
+        <button type="button" class="btn btn-warning px-3 py-2" id="convertToLowerCaseButton">Convert to Lowercase</button>
+    </div>
+
+     <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2" onclick="replaceSpacesWithHyphen()">Replace spaces with hyphen</button>
+    </div>
+
+    <div class="mt-5 d-flex ">
+        <button type="button" class="btn btn-warning px-3 py-2" onclick="splitStringIntoArray()">Split string into array</button>
+    </div>
+
+    <div class="mt-5 flex-column">
+        <button type="button" class="btn btn-warning px-3 py-2" onclick="checkVowel()">Check vowel</button>
+    </div>
+
+    <div class="mt-5 ">
+        <button type="button" class="btn btn-warning px-3 py-2" onclick="checkPalindrome()">Check if it is palindrome</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
