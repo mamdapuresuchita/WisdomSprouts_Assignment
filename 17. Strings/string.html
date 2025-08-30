@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>String Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center bg-warning-subtle text-warning-emphasis mb-5 p-3">String Assignment</h1>
+
+    <div class="input-group mx-auto" style="width: 80%; height: 100px;">
+    <textarea class="form-control  border-danger-subtle border-2"  placeholder="Enter your text here" aria-label="With textarea" id="textarea"></textarea>
+    </div>
+
+    <div class=" w-50 mx-auto bg-warning-subtle text-warning-emphasis mt-3 p-3 text-center border border-danger border-3">
+        <div id="result">Result</div>
+    </div>
+
+<!-- ..................................... -->
+    <div class="operations mt-5 p-3 d-flex flex-wrap justify-content-evenly gap-3">
+
+    <div class="vowels" onclick="countVowels()">
+        <button type="button" class="btn btn-warning" id="numOfVowels">Count vowels</button>
+    </div>
+
+    <div class="consonants" onclick="countConsonants()">
+        <button type="button" class="btn btn-warning">Count consonants</button>
+    </div>
+
+    <div class="convertToSmallCase" onclick="Tosmallcase()">
+        <button type="button" class="btn btn-warning" id="smallcase">Convert to small case</button>
+    </div>
+
+    <div class="titleCase" onclick="ToTitleCase()">
+        <button type="button" class="btn btn-warning" id="convertToTitleCase">Convert to title case</button>
+    </div>
+
+    <div class="palindrome" onclick="checkPalindrome()">
+        <button type="button" class="btn btn-warning">Check palindrome</button>
+    </div>
+
+    <div class="firstWord" onclick="extractFirstWord()">
+        <button type="button" class="btn btn-warning">Extract first word</button>
+    </div>
+
+    <div class="replaceSpace" onclick="replaceSpaces()">
+        <button type="button" class="btn btn-warning">Replace spaces with hyphen</button>
+    </div>
+
+    <div class="splitStr" onclick="splitStr()">
+        <button type="button" class="btn btn-warning">Split string into array</button>
+    </div>
+
+    <div class="capitalize" onclick="ToCapitalizeEachWord()">
+        <button type="button" class="btn btn-warning">Capitalize first letter</button>
+    </div>
+
+    <div class="reverse" onclick="reverseString()">
+        <button type="button" class="btn btn-warning">Reverse string</button>
+    </div>
+
+    <div class="countNumOf" onclick="countOccurrences()">
+        <button type="button" class="btn btn-warning">Count number of occurences</button>
+    </div>
+
+    <div class="removeNonAlpha" onclick="ToRemoveNonAlpha()">
+        <button type="button" class="btn btn-warning">Remove non-alphanumeric characters</button>
+    </div>
+
+    <div class="checkFirstLastChar" onclick="IsSameChar()">
+        <button type="button" class="btn btn-warning">Check first and last character</button>
+    </div>
+
+    </div>
+    <script src="./string.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
