@@ -7,13 +7,16 @@ deleteElement = document.querySelector(".deleteBtn");
 function addTask(){
 
     inputValue = inputElement.value;
-    displayTask.innerHTML += `<span><li>${inputValue }</span><button type="button" class="btn btn-outline-primary btn-sm deleteBtn" style="display:inline;" onclick="deleteTask()">Delete task</button></li>`; 
-    inputElement.value = "";//to clear previous input
+     displayTask.innerHTML += `<div class="task-item">
+        <li style="display:inline;">${inputValue}</li>
+        <button class="deleteBtn btn btn-sm btn-outline-primary m-1" onclick="deleteTask(this)">Delete</button>
+      </div>`
+    //(this)- passing the button itself
+     inputElement.value = "";//to clear previous input
 }
 
-function deleteTask(){
-//   displayTask.remove();
-
+function deleteTask(buttonElmt){
+    buttonElmt.parentElement.remove(); // remove the parent div one task only
  }
 
 function clearAllTasks() {
