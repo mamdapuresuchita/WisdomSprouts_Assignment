@@ -6,16 +6,14 @@ deleteElement = document.querySelector(".deleteBtn");
 
 function addTask(){
 
-    // inputValue = inputElement.value;
-    // displayTask.innerHTML += `<li>${inputValue}</li>`;
     inputValue = inputElement.value;
-    displayTask.innerHTML += `<span><li>${inputValue}</li></span>
-    <button class="deleteBtn" style="display:inline;" onclick="deleteTask()">Delete task</button>`; //
+    displayTask.innerHTML += `<span><li>${inputValue }</span><button type="button" class="btn btn-outline-primary btn-sm deleteBtn" style="display:inline;" onclick="deleteTask()">Delete task</button></li>`; 
     inputElement.value = "";//to clear previous input
 }
 
 function deleteTask(){
-  displayTask.remove();
+//   displayTask.remove();
+
  }
 
 function clearAllTasks() {
@@ -67,19 +65,36 @@ function CalculateMarks(){
 //3.Search in Array
 
 ArrayElement = document.querySelector(".enterElement");
-arrayResult = document.querySelector(".searchResult");
+arrayResult = document.querySelector(".listofElm");
 searchElement = document.querySelector(".findElement");
 
 listOfArray = [];
 
+
 function addElement(){
     listOfArray = ArrayElement.value.split(","); //split elements
-    ArrayElement.value = "";
+    ArrayElement.value = "";//clear the input
 
 }
 
+
+//This is not case sensitive  so use find method instead of includes method???
+// function searchArray(){
+//     if(listOfArray.includes (searchElement.value)){
+//         arrayResult.innerHTML ="Element found in array: " + searchElement.value;
+//     }
+//     else{
+//         arrayResult.innerHTML ="Sorry Element not found in array!! " ;
+//     }
+// }
+
+
+
 function searchArray(){
-    if(listOfArray.includes (searchElement.value)){
+    inputWord = searchElement.value;
+    searchInArray = listOfArray.find((searchElement)=>searchElement.toLowerCase() == inputWord.toLowerCase());//converts word to lowercase & searched element
+    console.log(searchInArray)
+    if(searchInArray){
         arrayResult.innerHTML ="Element found in array: " + searchElement.value;
     }
     else{
@@ -111,25 +126,28 @@ function addNumbers(){
     displayAllNum.innerHTML = "Numbers: " + numbers.join(", "); //display as list
 }
 
+
+
 function showEven(){
-    let even=0;
+    let even=[];
     for(let i=0;i<numbers.length;i++){
-        if(numbers[i] % 2 == 0){
-            even++;
-        }
+        numbers[i] % 2 ==0 && even.push(numbers[i]);
     }
     displayEvenNum.innerHTML = even;
 }
 
 function showOdd(){
-    let odd=0;
+    let odd=[];
     for(let i=0;i<numbers.length;i++){
-        if(numbers[i] % 2 != 0){
-            odd++;
-        }
+        numbers[i] % 2 !==0 && odd.push(numbers[i]);
     }
-    displayOddNum.innerHTML =  odd;
+    
+    displayOddNum.innerHTML = odd ;
+   
 }
+
+//can use filter method instead
+//even=numArray.filter((n)=> n%2==0)
 
 function clearNumbers(){
     numbers = [];
@@ -165,3 +183,5 @@ function reset(){
     displayName.value = ""; // clear the display input
     storedNames.innerHTML = ""; // clear the stored names list
 }
+
+
