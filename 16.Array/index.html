@@ -8,37 +8,55 @@
   </head>
   <body>
 
+  
+
     <div class="ToDoList border border-primary-subtle m-4 p-3  bg-info-subtle text-info-emphasis" >
         <h1 class="text-center">1.To do list Manager</h1>
         
                 <div class="input-group " style="width: 75%">
-                <input type="text" class="form-control m-3 border-3 border-primary" placeholder="Enter a task" aria-label="Recipient’s username with two button addons">
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Add task</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Clear All</button>
+                <input type="text" class="textarea form-control m-3 border-3 border-primary" placeholder="Enter a task" aria-label="Recipient’s username with two button addons">
+                <button class="btn btn-info border border-3 border-dark m-3" type="button" onclick="addTask()" id="addTaskButton">Add task</button>
+                <button class="btn btn-info border border-3 border-dark m-3" type="button" onclick="clearAllTasks()">Clear All</button>
+                
+                             
                 </div>
-                        
+                
+                  <div class="result">
+            
+                </div>
+              
+                 
     </div>
     
     <div class="Calci border border-primary-subtle m-4 p-3  bg-info-subtle text-info-emphasis">
         <h1 class="text-center">2. Student Marks Calculator</h1>
         
                 <div class="input-group">
-                <input type="text" class="form-control m-3  border-3 border-primary" placeholder="Enter marks" aria-label="Recipient’s username with two button addons">
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Add Mark</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Calculate</button>
+                <input type="text" class="form-control m-3  border-3 border-primary marks" placeholder="Enter marks" aria-label="Recipient’s username with two button addons">
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="addMks()" type="button">Add Mark</button>
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="CalculateMarks()" type="button">Calculate</button>
                 <button class="btn btn-info border border-3 border-dark m-3" type="button">Reset</button>
                 </div>
-                        
+
+                <p class="displayMks"></p>
+
     </div>
 
     <div class="SearchInArray border border-primary-subtle m-4 p-3  bg-info-subtle text-info-emphasis">
         <h1 class="text-center">3. Search in an array</h1>
         
                 <div class="input-group">
-                <input type="text" class="form-control m-3  border-3 border-primary " placeholder="Enter element" aria-label="Recipient’s username with two button addons">
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Search</button>
+                <input type="text" class="form-control m-3  border-3 border-primary enterElement" placeholder="Enter elements to store" aria-label="Recipient’s username with two button addons">
+                <button class="btn btn-info border border-3 border-dark m-3 " onclick="addElement()" type="button">Add </button>
              
+                <br>
+                <input type="text" class="form-control m-3  border-3 border-primary findElement" placeholder="Which element you want to search?" aria-label="Recipient’s username with two button addons">
+      
+                <button class="btn btn-info border border-3 border-dark m-3 " onclick="searchArray()" type="button">Search</button>
+                <button class="btn btn-info border border-3 border-dark m-3 " onclick="clearArray()" type="button">Clear</button>
                 </div>
+
+                <p class="searchResult"></p>
                         
     </div>
 
@@ -47,39 +65,44 @@
         <h1 class="text-center">4.Filter Odd and Even Numbers</h1>
         
                 <div class="input-group">
-                <input type="text" class="form-control m-3  border-3 border-primary " placeholder="Enter a number" aria-label="Recipient’s username with two button addons">
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Add Number</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Show Even</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Show Odd</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Clear</button>
+                <input type="text" class="form-control m-3  border-3 border-primary addNum" placeholder="Enter a number" aria-label="Recipient’s username with two button addons">
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="addNumbers()" type="button">Add Number</button>
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="showEven()" type="button">Show Even</button>
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="showOdd()" type="button">Show Odd</button>
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="clearNumbers()" type="button">Clear</button>
                 </div>
+
+                <p class="showAllNum"></p>
 
                 <h3 class="ms-4">Even numbers</h3>
                 <div class="input-group mb-3 m-4" style="width: 65%">
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                
+                <input type="text" class="form-control displayEven" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                  </div>
 
                 <h3 class="ms-4">Odd numbers</h3>
                 <div class="input-group mb-3 m-4" style="width: 65%">
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        
+                <input type="text" class="form-control displayOdd" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
                         
     </div>
 
-    <div class="SortAlpha border border-primary-subtle m-4 p-3  bg-info-subtle text-info-emphasis">
+    <div class=" SortAlpha border border-primary-subtle m-4 p-3  bg-info-subtle text-info-emphasis">
         <h1 class="text-center">4.Sort Names Alphabetically</h1>
         
                 <div class="input-group">
-                <input type="text" class="form-control m-3  border-3 border-primary " placeholder="Enter a name" aria-label="Recipient’s username with two button addons">
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Add Name</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Sort</button>
-                <button class="btn btn-info border border-3 border-dark m-3" type="button">Reset</button>
+                <input type="text" class="form-control m-3  border-3 border-primary storeName" placeholder="Enter a name" aria-label="Recipient’s username with two button addons">
+                <button class="btn btn-info border border-3 border-dark m-3 addName" onclick="addNameToArray()" type="button">Add Name</button>
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="sortNamesAlphabetically()" type="button">Sort</button>
+                <button class="btn btn-info border border-3 border-dark m-3" onclick="reset()" type="button">Reset</button>
           
                 </div>
 
-                
+                 <ul class="nameList"></ul>
+
                 <div class="input-group mb-3 m-4" style="width: 95%">
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control displayName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>               
     </div>
 
