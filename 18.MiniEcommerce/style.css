@@ -1,0 +1,39 @@
+.mainHeading{
+    color: white;
+    font-weight: 600;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    
+    border: 2px solid rgb(206, 187, 9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Add Product page CSS */
+
+.addProdForm{
+    width: 500px;
+    height: 550px;
+    border: none;
+    margin: 0 auto;
+    padding: 20px;
+   
+}

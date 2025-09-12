@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="mainHeading text-center bg-dark bg-gradient ">Welcome to WatchVista</h1>
+
+
+
+<!-- NAVBAR Code -->
+
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">Products</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./addProduct.html">Add New Product</a>
+                            </li>
+
+                </ul>
+        </div>
+  </div>
+</nav>
+
+<!-- Banner.................... -->
+
+<div id="carouselExampleAutoplaying" class="carousel slide bg-dark" data-bs-ride="carousel">
+    <div class="carousel-inner p-2" style="height: 500px;">
+                <div class="carousel-item active">
+                <img src="./images/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./images/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./images/3.jpg" class="d-block w-100" alt="...">
+                </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h2 class="text-center mt-3 p-2 ">Our Products</h2>
+
+<!-- Search Bar -->
+
+    <div class="searchBar">
+    <div class="container-fluid d-flex"> 
+        <input class="form-control border-warning border-3 " type="search" placeholder="Search by Name" aria-label="Search" id="searchProducts">
+        <button class="btn btn-warning ms-3" onclick="searchProducts()" >Search</button>  
+    </div>
+
+    <div class="dropdown">
+    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Brands
+    </button>
+    <ul class="dropdown-menu" id="renderBrands" >
+    </ul>
+    </div>
+    </div>
+<!-- Search Bar End -->
+<!-- 
+Render Products -->
+<div class="container mt-2" >
+    <div class="row" id="renderCard"></div>
+</div>
+
+<footer class="text-center p-3 mb-2 bg-dark bg-gradient text-white">
+    copyright - WatchVista 2025
+</footer >
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+</body>
+
+
+</html>

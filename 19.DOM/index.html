@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        document.body.style.backgroundColor="beige";
+
+        
+        //Add Heading
+
+        headingElement=document.createElement("h1");
+        headingElement.textContent="This is my demo page";
+        headingElement.style.fontSize="35px";
+        headingElement.style.color="brown";
+        headingElement.style.textAlign="center";
+        document.body.appendChild(headingElement);
+
+
+        //Add Image
+
+        imageElmt = document.createElement("img");
+        imageElmt.style.width="200px";
+        imageElmt.style.height="200px";
+        imageElmt.style.border="2px solid black";
+        imageElmt.style.alignItems="center";
+        imageElmt.src="./test.jpg";
+        document.body.appendChild(imageElmt);
+
+        //Add Paragraph
+
+        para=document.createElement("p");
+        para.textContent="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam odio magni dignissimos reiciendis autem sequi? Repudiandae delectus, voluptate inventore quasi quibusdam similique eveniet molestiae, commodi tempore mollitia molestias eos laborum vero qui itaque, ipsam ab. Repellat debitis reiciendis eos!";
+        para.style.fontSize="15px";
+        para.style.color="purple";
+        para.style.textAlign="justify";
+        para.style.padding="30px";
+        document.body.appendChild(para);
+
+        //Add button
+
+        btnElement = document.createElement("button");
+        btnElement.textContent="View More";
+        btnElement.style.color="blue";
+        btnElement.style.backgroundColor="yellow";
+        btnElement.style.width="200px";
+        btnElement.style.height="70px";
+        btnElement.style.border="2px solid black";
+
+        document.body.appendChild(btnElement);
+
+
+        //Add hover
+
+        btnElement.addEventListener("mouseover", function(){
+            btnElement.style.backgroundColor="purple";
+            btnElement.style.color="white";
+        }
+            )
+
+
+         btnElement.addEventListener("mouseout", function(){
+            btnElement.style.color="blue";
+            btnElement.style.backgroundColor="yellow";
+            }
+            )
+
+        //card
+
+            card = document.createElement("div");
+    card.style.width="300px";
+    card.style.height="300px";
+    card.style.backgroundColor="pink";
+    card.style.margin="30px";
+    card.style.padding="20px";
+    document.body.appendChild(card);
+
+
+    cardHeading=document.createElement("h1");
+    cardHeading.textContent="Hello, This is my card";
+    cardHeading.style.color="red";
+    card.appendChild(cardHeading);
+
+
+    cardText = document.createElement("p");
+    cardText.textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi ab facilis aliquid, corporis rerum repellat consequuntur sequi fuga harum, cumque dicta sapiente non voluptatibus ut fugit id impedit alias repellendus incidunt";
+    cardText.style.fontSize="8px";
+    cardText.style.textAlign="justify";
+    cardText.style.padding="10px";
+    card.appendChild(cardText);
+
+    //Responsive
+
+    document.body.style.display= "flex";
+    document.body.style.flexDirection="column";
+    document.body.style.alignItems="center";
+    document.body.style.justifyContent="center";
+    </script>
+</body>
+</html>
