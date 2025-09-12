@@ -1,3 +1,22 @@
 
 document.body.style.backgroundColor="beige";
 'beige'
+
+imageElmt = document.createElement("img");
+<img>​
+imageElmt.style.width="200px";
+'200px'
+imageElmt.style.height="200px";
+'200px'
+imageElmt.style.border="2px solid black";
+'2px solid black'
+imageElmt.style.alignItems="center";
+'center'
+imageElmt.src="./test.jpg";
+'./test.jpg'
+document.body.appendChild(imageElmt);
+<img style=​"width:​ 200px;​ height:​ 200px;​ border:​ 2px solid black;​ align-items:​ center;​" src=​"./​test.jpg">​
+
+
+
+headingElement=document.createElement("h1");
