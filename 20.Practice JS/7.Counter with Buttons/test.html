@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f8ff;
+    }
+    .counter-box {
+      text-align: center;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .count {
+      font-size: 3rem;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .inc { background: #4caf50; color: white; }
+    .dec { background: #f44336; color: white; }
+    .reset { background: #2196f3; color: white; }
+  </style>
+</head>
+<body>
+
+  <div class="counter-box">
+    <h2>Counter App</h2>
+    <div id="count" class="count">0</div>
+    <button class="inc">Increment</button>
+    <button class="dec">Decrement</button>
+    <button class="reset">Reset</button>
+  </div>
+
+  <script>
+    const countEl = document.getElementById("count");
+    const incBtn = document.querySelector(".inc");
+    const decBtn = document.querySelector(".dec");
+    const resetBtn = document.querySelector(".reset");
+
+    // Event listeners
+    incBtn.addEventListener("click", () => {
+      let value = parseInt(countEl.innerText);
+      countEl.innerText = value + 1;
+    });
+
+    decBtn.addEventListener("click", () => {
+      let value = parseInt(countEl.innerText);
+      countEl.innerText = value - 1;
+    });
+
+    resetBtn.addEventListener("click", () => {
+      countEl.innerText = 0;
+    });
+  </script>
+
+</body>
+</html>

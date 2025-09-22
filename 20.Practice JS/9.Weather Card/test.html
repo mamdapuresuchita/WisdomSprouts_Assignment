@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #e0f7fa;
+    }
+    .card {
+      width: 300px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .card img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .temp {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .city {
+      font-size: 1.3rem;
+      margin: 5px 0;
+    }
+    .condition {
+      font-size: 1rem;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="weatherCard"></div>
+
+  <script>
+    // Weather data object
+    const weather = {
+      city: "Pune",
+      temperature: 28,
+      condition: "Sunny",
+      icon: "https://cdn-icons-png.flaticon.com/512/869/869869.png"
+    };
+
+    // Select card container
+    const cardContainer = document.getElementById("weatherCard");
+
+    // Create elements dynamically
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const icon = document.createElement("img");
+    icon.src = weather.icon;
+
+    const temp = document.createElement("div");
+    temp.className = "temp";
+    temp.textContent = weather.temperature + "°C";
+
+    const city = document.createElement("div");
+    city.className = "city";
+    city.textContent = weather.city;
+
+    const condition = document.createElement("div");
+    condition.className = "condition";
+    condition.textContent = weather.condition;
+
+    // Append children
+    card.appendChild(icon);
+    card.appendChild(temp);
+    card.appendChild(city);
+    card.appendChild(condition);
+    cardContainer.appendChild(card);
+  </script>
+
+</body>
+</html>

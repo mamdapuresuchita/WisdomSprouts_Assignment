@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Popup Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    /* Modal background */
+    .modal {
+      display: none; /* hidden by default */
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Modal content */
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      width: 400px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    /* Close button */
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    @keyframes fadeIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="openBtn">Open Modal</button>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Hello 👋</h2>
+      <p>This is a modal popup created with JavaScript.</p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.querySelector(".close");
+
+    // Open modal
+    openBtn.addEventListener("click", () => {
+      modal.style.display = "flex";
+    });
+
+    // Close modal on X click
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close modal on outside click
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
