@@ -1,3 +1,5 @@
+//Assignment1 JS
+
 upperCaseSet = "ABCDRFGHIJKLMNOPQRSTUVWXYZ";
 lowerCaseSet ="abcdefghijklmnopqrstuvwxyz";
 numSet ="1234567890";
@@ -6,9 +8,6 @@ symbolSet ="[]\;',./{}:<>?!@#$%^&*()_+-=";
 
 //selectors
 displayBox = document.querySelector("#result");
-
-
-
 totalChar =document.querySelector("#lenOfPwd")
 numInput = document.querySelector("#includeNum")
 upperInput = document.querySelector("#includeUpperCase")
@@ -53,4 +52,43 @@ const generatePassword = () => {
 
     // Generate one on page load
     generatePassword();
+
+
+
+//...................Assignment 2
+
+let otp="";
+const randomOtp = document.querySelector("#displayOtp");
+const enteredOtpElmt = document.querySelector("#enteredOtp");
+
+
+function generateOtp(){ 
+  otp = Math.floor(1000 + Math.random()*9000);//0 to 9000 will be printed ao if 1000 added num will be 4 digit
+  console.log(otp);
+  randomOtp.innerText =otp;
+
+  enteredOtpElmt.value ="";//clears input
+  
+}
+
+//limit input to 4 digits
+
+// enteredOtpElmt.addEventListener("input",()=>{
+//   if(enteredOtpElmt.value.length>4){
+//     enteredOtpElmt.value = enteredOtpElmt.value.slice(0,4);
+//   }
+// })
+
+function verifyOtp(){
+  
+  if(otp == enteredOtpElmt){
+    alert("You entered correct Otp!!")
+  }
+  else{
+    alert("Invalid Otp!!Please try again")
+  }
+
+  
+}
+
 
