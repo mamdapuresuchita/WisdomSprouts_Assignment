@@ -55,7 +55,7 @@ const generatePassword = () => {
 
 
 
-//...................Assignment 2
+//...................Assignment 2........................................
 
 let otp="";
 const randomOtp = document.querySelector("#displayOtp");
