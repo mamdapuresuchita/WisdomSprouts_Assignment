@@ -55,13 +55,6 @@ const watches =[{
 ]
 
 
-function getWatchesFromLocalStorage(data) {
-  localStorage.setItem("watchesData", JSON.stringify(data)); //stringify to convert array to string
-}
-
-// function getWatchesFromLocalStorage() {
-//   return JSON.parse(localStorage.getItem("watchesData"));
-// }
 
 
 renderCardElmt =document.querySelector("#renderCard")
@@ -127,6 +120,18 @@ renderBrand();
 
 //Add New product
 
+function setWatchesToLocalStorage(data) {
+  localStorage.setItem("watchesData", JSON.stringify(data)); //stringify to convert array to string
+  console.log("Saved to local",data);
+}
+
+function getWatchesFromLocalStorage() {
+  let data = JSON.parse(localStorage.getItem("watchesData"));
+  console.log("Loaded from storage", data);
+  return data || [];
+}
+
+
 
 titleElement = document.querySelector('#title');
 descElement = document.querySelector('#desc');
@@ -144,19 +149,19 @@ function addNewProduct(){
     brand:brandElement.value,
     moreInfo:'View More',
   }
- console.log(newWatch);
- watches.push=newWatch;
- console.log(watches)
 
 
-  // console.log(newWatch);
-  // watchesFromLocal = getWatchesFromLocalStorage();
+  console.log(newWatch);
 
-  // watchesFromLocal.push(newWatch); //Add new product to collection
-  // setWatchestoLocalStorage(watchesFromLocal);
-  // window.location.href = './index.html';
+  let watchesFromLocal = getWatchesFromLocalStorage();//always returns array
+  watchesFromLocal.push(newWatch); //Add new product to collection
+  setWatchesToLocalStorage(watchesFromLocal); //Save updated data
 
-  getWatchesFromLocalStorage(watches)
+  console.log(" Final localStorage data:", getWatchesFromLocalStorage());
+
+  window.location.href = './index.html';
+
+  getWatchesFromLocalStorage(watches);
 }
 
 
