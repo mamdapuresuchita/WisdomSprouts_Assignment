@@ -90,6 +90,13 @@ const MovieDetails = () => {
           {movies[movieID - 1].details}
         </p>
 
+        
+        <div class="p-3 mb-5 bg-danger bg-opacity-10 border border-danger rounded-3">
+  <h3 className="mb-3 text-danger">Cast</h3>{movies[movieID - 1].cast}
+</div>
+
+       
+
         <div class="text-center">
   <img src={movies[movieID - 1].img} class="rounded" alt={movies[movieID - 1].title}/>
 </div>
