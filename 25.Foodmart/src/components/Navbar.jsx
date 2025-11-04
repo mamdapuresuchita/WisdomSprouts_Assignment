@@ -92,7 +92,7 @@ const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Shop By Category
+              Shop By Departments
             </button>
             <ul class="dropdown-menu">
               <li>
