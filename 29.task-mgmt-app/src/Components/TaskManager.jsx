@@ -67,9 +67,9 @@ const TaskManager = () => {
   return (
     <div className="container">
       
-        
-      <button className="fab" onClick={() => setShowModal(true)}>Add Task</button>
-
+      <div className="addTaskBtn text-center mb-3">
+      <button className="fab btn px-4 py-2 fw-semibold" onClick={() => setShowModal(true)}>Add Task</button>
+</div>
       <ToastContainer />
       {/* Table display tasks */}
 
@@ -77,7 +77,7 @@ const TaskManager = () => {
         <p>No tasks added</p>
       ) : (
         <table className="table  mt-4 ">
-          <thead>
+          <thead className="border border-bottom-0 ">
             <tr>
               <th>Sr.No</th>
               <th>Task Title</th>

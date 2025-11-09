@@ -91,14 +91,11 @@ td, th {
   transform: translateY(-2px);
 }
 
-.fab {
-  background: linear-gradient(135deg, #6C63FF, #2C3E50);
-}
 
 /* ✨ Add Task Button */
 .fab {
-  background-color: #2C3E50; /* Dark slate tone */
-  color: #fff;
+  background: linear-gradient(135deg, #6C63FF, #6b849e);
+  color: #f7f2f2;
   border: none;
   border-radius: 8px;
   padding: 12px 24px;
