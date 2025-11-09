@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  color: #022242; /* deep slate blue */
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  
+  /* subtle styling for contrast */
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 14px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  /* optional: soft glow to make text pop slightly */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+table {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: linear-gradient(135deg, #2C3E50, #34495E);
+  color: #fff; /* White text for readability */
+}
+
+thead th {
+  font-weight: 600;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #444;
+}
+
+td, th {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tableBtn{
+      border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 6px;
+
+}
+
+.deleteBtn{
+     background-color:#C0392B;
+  color: #fff;
+}
+
+.deleteBtn:hover {
+  background-color: #a93226;
+  transform: translateY(-2px);
+}
+
+
+.editBtn {
+  background-color: #2C3E50;
+  color: #fff;
+}
+
+.editBtn:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.fab {
+  background: linear-gradient(135deg, #6C63FF, #2C3E50);
+}
+
+/* ✨ Add Task Button */
+.fab {
+  background-color: #2C3E50; /* Dark slate tone */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+/* Hover effect */
+.fab:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+/* === Modal Background Overlay === */
+.modal {
+  background-color: rgba(0, 0, 0, 0.5); /* soft dark overlay */
+  backdrop-filter: blur(3px);
+}
+
+/* === Modal Container === */
+.modal-content {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: #2c3e50;
+}
+
+/* === Header === */
+.modal-header {
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 0 0;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.btn-close {
+  filter: invert(0.4);
+}
+
+/* === Body === */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.modal-body input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.modal-body input:focus {
+  border-color: #2C3E50;
+  box-shadow: 0 0 6px rgba(44, 62, 80, 0.4);
+}
+
+/* === Footer === */
+.modal-footer {
+  border-top: none;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer .btn-primary {
+  background-color: #2C3E50;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #1a252f;
+  transform: translateY(-1px);
+}
+
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.85rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
