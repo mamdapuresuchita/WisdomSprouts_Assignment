@@ -1,5 +1,0 @@
-// 1.Create Database
-// 2.Create Tables
-// 3.Insert Database
-// 4.CRUD Operations
-// 5.SQL Joins
