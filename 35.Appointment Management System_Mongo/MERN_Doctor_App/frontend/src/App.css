@@ -1,0 +1,290 @@
+/* LOgin Page CSS */
+
+/* Full page background */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.login-title {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Register link */
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #667eea;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Register Page css */
+
+/* Background */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* Card */
+.register-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.register-title {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.register-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Login link */
+.login-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #667eea;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dashboard CSS */
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h4 {
+  margin-bottom: 30px;
+}
+
+.menu {
+  flex-grow: 1;
+}
+
+/* Menu Button */
+.menu-btn {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: white;
+  color: #4e54c8;
+  transform: translateX(5px);
+}
+
+/* Logout */
+.logout-btn {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #e53935;
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  padding: 30px;
+  background: #f9fafb;
+}
